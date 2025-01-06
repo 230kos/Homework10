@@ -19,9 +19,8 @@ def filter_by_state(list_dict: list[dict[str, Any]], state: str = "EXECUTED") ->
 
 def sort_by_date(list_dict: list[dict[str, Any]], sort_direction: bool = True) -> list[dict[str, Any]]:
     """Функция сортировки списка по дате"""
-    return sorted(list_dict, key = lambda x: x["date"], reverse = sort_direction)
+    return sorted(list_dict, key=lambda x: x["date"], reverse=sort_direction)
 
 
 print(filter_by_state(list_dict))
 print(sort_by_date(list_dict))
-
